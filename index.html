@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Water Gun Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🐍 Snake💧Water🔫Gun </h1>
+    <p>Choose your move:</p>
+    <div class="buttons">
+      <button onclick="playGame('snake')">🐍</button>
+      <button onclick="playGame('water')">💧</button>
+      <button onclick="playGame('gun')">🔫</button>
+    </div>
+
+    <div class="scoreboard">
+      <p>🧑 You: <span id="user-score">0</span></p>
+      <p>💻 Computer: <span id="computer-score">0</span></p>
+      <p>🔁 Round: <span id="round">1</span></p>
+    </div>
+
+    <div class="result">
+      <p id="user-choice"></p>
+      <p id="computer-choice"></p>
+      <h2 id="outcome"></h2>
+    </div>
+
+    <button class="reset-btn" onclick="resetGame()">🔄 Reset Game</button>
+
+    <!-- Sound Effects -->
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="lose-sound" src="lose.mp3"></audio>
+    <audio id="tie-sound" src="tie.mp3"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  text-align: center;
+  padding: 50px;
+  color: #333;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.scoreboard {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #e65c50;
+}
